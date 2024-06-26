@@ -12,7 +12,7 @@ def run_streamlit(app_name, port):
 @app.route('/')
 def index():
     title = "ChatFusion 🗨️"
-    return render_template('dashboard.html',title=title)
+    return render_template('index.html',title=title)
 
 @app.route('/chatbotsimple')
 def chatbot_simple():
