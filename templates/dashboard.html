@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- <link rel="stylesheet" href="./styles.css"> -->
+</head>
+
+<body>
+
+    <h1 class="head">Welcome to ChatFusion <br> <span style="font-size: 0.8em;">Your Multi-Bot Hub</span></h1>
+
+    <div class="py-5 service-22" style="padding: 0px;">
+        <div class="container">
+            <div class="row wrap-service-22">
+                <div class="col-lg-6">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d4/Multi-dp.gif"
+                        class="rounded img-shadow img-fluid" alt="wrapkit" style="height: 400px;" />
+                </div>
+                <div class="col-lg-6 mt-4 mt-md-0">
+                    <div class="text-box">
+                        <small class="text-info font-weight-medium">Explore the Power of ChatFusion: Your Multi-Bot
+                            Hub</small>
+                        <h4 class="font-weight-light mt-2 mb-4">ChatFusion: <span class="text-megna">Enjoy
+                                responses</span> with Multi-Bot Support</h4>
+                        <p>ChatFusion brings together multiple specialized chatbots into one seamless experience,
+                            providing dynamic responses and insights for various tasks.</p>
+                        <p>✔️ Interact with bots tailored for different tasks and data.<br>
+                            ✔️ Get real-time answers to your questions from AI.<br>
+                            ✔️ Experience seamless and intuitive user interface.<br></p>
+                        <a class="btn btn-info-gradiant btn-md text-white border-0"
+                            href="#bots"><span>Explore</span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="container" style="margin-top: 10px;" id="bots">
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card card-margin">
+                    <div class="card-header no-border">
+                        <h5 class="card-title">Talk2AI</h5>
+                    </div>
+                    <div class="card-body pt-0">
+                        <div class="widget-49">
+                            <div class="widget-49-title-wrapper">
+                                <div class="widget-49-date-primary">
+                                    <span class="widget-49-date-day">01</span>
+                                    <span class="widget-49-date-month">BOT</span>
+                                </div>
+                                <div class="widget-49-bot-info">
+                                    <span class="widget-49-pro-title">Basic Interaction</span>
+                                    <span class="widget-49-bot-time">Real-time Support</span>
+                                </div>
+                            </div>
+                            <ol class="widget-49-bot-points">
+                                <li class="widget-49-bot-item"><span>Answers simple queries</span></li>
+                                <li class="widget-49-bot-item"><span>Provides quick responses</span></li>
+                                <li class="widget-49-bot-item"><span>Ideal for FAQs</span></li>
+                            </ol>
+                            <div class="widget-49-bot-action">
+                                <!-- <a href="http://localhost:8501" class="btn btn-sm btn-flash-border-primary" target="_blank">Try Now</a> -->
+                                <a href="https://talk2ai.onrender.com" class="btn btn-sm btn-flash-border-primary"
+                                    target="_blank">Try Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card card-margin">
+                    <div class="card-header no-border">
+                        <h5 class="card-title">Talk2CSV</h5>
+                    </div>
+                    <div class="card-body pt-0">
+                        <div class="widget-49">
+                            <div class="widget-49-title-wrapper">
+                                <div class="widget-49-date-success">
+                                    <span class="widget-49-date-day">02</span>
+                                    <span class="widget-49-date-month">BOT</span>
+                                </div>
+                                <div class="widget-49-bot-info">
+                                    <span class="widget-49-pro-title">Dataset Interaction</span>
+                                    <span class="widget-49-bot-time">Non-stop Assistance</span>
+                                </div>
+                            </div>
+                            <ol class="widget-49-bot-points">
+                                <li class="widget-49-bot-item"><span>Analyze the provided CSV Data</span></li>
+                                <li class="widget-49-bot-item"><span>Generate Responses from CSV</span></li>
+                                <li class="widget-49-bot-item"><span>Generate SQL Queries</span></li>
+                            </ol>
+                            <div class="widget-49-bot-action">
+                                <!-- <a href="http://localhost:8502" class="btn btn-sm btn-flash-border-success" target="_blank">Try Now</a> -->
+                                <a href="{{ url_for('under_construction') }}"
+                                    class="btn btn-sm btn-flash-border-success" target="_blank">Try Now</a>
+                                <!-- <a href="https://talk2csv.onrender.com" class="btn btn-sm btn-flash-border-success" target="_blank">Try Now</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card card-margin">
+                    <div class="card-header no-border">
+                        <h5 class="card-title">Talk2Image</h5>
+                    </div>
+                    <div class="card-body pt-0">
+                        <div class="widget-49">
+                            <div class="widget-49-title-wrapper">
+                                <div class="widget-49-date-info">
+                                    <span class="widget-49-date-day">03</span>
+                                    <span class="widget-49-date-month">BOT</span>
+                                </div>
+                                <div class="widget-49-bot-info">
+                                    <span class="widget-49-pro-title">Image Interaction</span>
+                                    <span class="widget-49-bot-time">Instant Response</span>
+                                </div>
+                            </div>
+                            <ol class="widget-49-bot-points">
+                                <li class="widget-49-bot-item"><span>Processes Image Data</span></li>
+                                <li class="widget-49-bot-item"><span>Provides Image Specific Answers</span></li>
+                                <li class="widget-49-bot-item"><span>Upload Images and Chat with AI Model</span></li>
+                            </ol>
+                            <div class="widget-49-bot-action">
+                                <!-- <a href="http://localhost:8503" class="btn btn-sm btn-flash-border-info" target="_blank">Try Now</a> -->
+                                <a href="{{ url_for('under_construction') }}"
+                                    class="btn btn-sm btn-flash-border-success" target="_blank">Try Now</a>
+                                <!-- <a href="https://talk2image.onrender.com" class="btn btn-sm btn-flash-border-info"
+                                    target="_blank">Try Now</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card card-margin">
+                    <div class="card-header no-border">
+                        <h5 class="card-title">Talk2PDF</h5>
+                    </div>
+                    <div class="card-body pt-0">
+                        <div class="widget-49">
+                            <div class="widget-49-title-wrapper">
+                                <div class="widget-49-date-danger">
+                                    <span class="widget-49-date-day">04</span>
+                                    <span class="widget-49-date-month">BOT</span>
+                                </div>
+                                <div class="widget-49-bot-info">
+                                    <span class="widget-49-pro-title">Document Interaction</span>
+                                    <span class="widget-49-bot-time">Multiple PDF Chat</span>
+                                </div>
+                            </div>
+                            <ol class="widget-49-bot-points">
+                                <li class="widget-49-bot-item"><span>Handles multiple PDF files</span></li>
+                                <li class="widget-49-bot-item"><span>Extracts Text and Data</span></li>
+                                <li class="widget-49-bot-item"><span>Chat with Multiple PDFs Simultaneously</span></li>
+                            </ol>
+                            <div class="widget-49-bot-action">
+                                <a href="https://talk2pdf-sd.streamlit.app/" class="btn btn-sm btn-flash-border-danger"
+                                    target="_blank">Try Now</a>
+                                <!-- <a href="http://localhost:8504" class="btn btn-sm btn-flash-border-danger" target="_blank">Try Now</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card card-margin">
+                    <div class="card-header no-border">
+                        <h5 class="card-title">Talk2Websites</h5>
+                    </div>
+                    <div class="card-body pt-0">
+                        <div class="widget-49">
+                            <div class="widget-49-title-wrapper">
+                                <div class="widget-49-date-warning">
+                                    <span class="widget-49-date-day">05</span>
+                                    <span class="widget-49-date-month">BOT</span>
+                                </div>
+                                <div class="widget-49-bot-info">
+                                    <span class="widget-49-pro-title">Website Interaction</span>
+                                    <span class="widget-49-bot-time">Non-stop Assistance</span>
+                                </div>
+                            </div>
+                            <ol class="widget-49-bot-points">
+                                <li class="widget-49-bot-item"><span>Scrapes Website Data</span></li>
+                                <li class="widget-49-bot-item"><span>Enter message, get AI Response Instantly.</span>
+                                </li>
+                                <li class="widget-49-bot-item"><span>Get Answers from Website Queries</span></li>
+                            </ol>
+                            <div class="widget-49-bot-action">
+                                <!-- <a href="http://localhost:8505" class="btn btn-sm btn-flash-border-warning" target="_blank">Try Now</a> -->
+                                <a href="{{ url_for('under_construction') }}"
+                                    class="btn btn-sm btn-flash-border-success" target="_blank">Try Now</a>
+                                <!-- <a href="https://talk2websites.onrender.com" class="btn btn-sm btn-flash-border-warning"
+                                    target="_blank">Try Now</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card card-margin">
+                    <div class="card-header no-border">
+                        <h5 class="card-title">Talk2YTube</h5>
+                    </div>
+                    <div class="card-body pt-0">
+                        <div class="widget-49">
+                            <div class="widget-49-title-wrapper">
+                                <div class="widget-49-date-dark">
+                                    <span class="widget-49-date-day">06</span>
+                                    <span class="widget-49-date-month">BOT</span>
+                                </div>
+                                <div class="widget-49-bot-info">
+                                    <span class="widget-49-pro-title">Video Interaction</span>
+                                    <span class="widget-49-bot-time">Always Online</span>
+                                </div>
+                            </div>
+                            <ol class="widget-49-bot-points">
+                                <li class="widget-49-bot-item"><span>Interacts with YouTube Video Links</span></li>
+                                <li class="widget-49-bot-item"><span>Extracts Video Data</span></li>
+                                <li class="widget-49-bot-item"><span>Get Answers from Youtube Videos</span></li>
+                            </ol>
+                            <div class="widget-49-bot-action">
+                                <!-- <a href="https://talk2ytube.onrender.com" class="btn btn-sm btn-flash-border-dark"
+                                    target="_blank">Try Now</a> -->
+                                <a href="{{ url_for('under_construction') }}"
+                                    class="btn btn-sm btn-flash-border-success" target="_blank">Try Now</a>
+                                <!-- <a href="http://localhost:8506" class="btn btn-sm btn-flash-border-dark" target="_blank">Try Now</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="card card-margin">
+                    <div class="card-header no-border">
+                        <h5 class="card-title">Talk2NetAssistAI</h5>
+                    </div>
+                    <div class="card-body pt-0">
+                        <div class="widget-49">
+                            <div class="widget-49-title-wrapper">
+                                <div class="widget-49-date-info">
+                                    <span class="widget-49-date-day">07</span>
+                                    <span class="widget-49-date-month">BOT</span>
+                                </div>
+                                <div class="widget-49-bot-info">
+                                    <span class="widget-49-pro-title">Internet Chat</span>
+                                    <span class="widget-49-bot-time">Available Anytime</span>
+                                </div>
+                            </div>
+                            <ol class="widget-49-bot-points">
+                                <li class="widget-49-bot-item"><span>Real-time interaction</span></li>
+                                <li class="widget-49-bot-item"><span>Get AI-based, Internet-Researched Insights.</span>
+                                </li>
+                                <li class="widget-49-bot-item"><span>Perfect for current news and trends</span></li>
+                            </ol>
+                            <div class="widget-49-bot-action">
+                                <!-- <a href="http://localhost:8507" class="btn btn-sm btn-flash-border-light" target="_blank">Try Now</a> -->
+                                <a href="{{ url_for('under_construction') }}"
+                                    class="btn btn-sm btn-flash-border-success" target="_blank">Try Now</a>
+                                <!-- <a href="https://talk2netassistai.onrender.com"
+                                    class="btn btn-sm btn-flash-border-light" target="_blank">Try Now</a> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer id="footer">
+        <div class="container py-4">
+            <div class="copyright">
+                &copy; Copyright <strong><span>Subhayu Dutta 2024</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by Subhayu Dutta</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+streamlit 
+google-generativeai
+langchain-community
+faiss-cpu
+langchain-google-genai
+sentence-transformers
+langchain
+pyPDF2
+beautifulsoup4
+youtube-transcript-api
+duckduckgo-search
+lxml_html_clean
+pillow
+playwright
+Flask
+python-dotenv
+
