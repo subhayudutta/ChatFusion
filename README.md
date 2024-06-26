@@ -3,7 +3,7 @@ ChatFusion brings together multiple specialized chatbots into one seamless exper
 
 ![ChatFusion Screenshot](./static/ChatFusion_screenshot.png)
 
-Visit the live app: [ChatFusion](https://chatfusion-yadr.onrender.com)
+Visit the live app: [ChatFusion](https://chat-fusion-rose.vercel.app/)
 
 ## Features
 
