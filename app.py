@@ -1,54 +1,39 @@
-from flask import Flask, render_template, redirect, url_for
-import subprocess
-import threading
-import os
+from flask import Flask, render_template, redirect
 
 app = Flask(__name__)
 
-def run_streamlit(app_name, port):
-    cmd = f'streamlit run {app_name} --server.port {port}'
-    subprocess.run(cmd, shell=True)
-
 @app.route('/')
 def index():
-    title = "ChatFusion 🗨️"
-    return render_template('index.html',title=title)
+    return render_template('index.html')
 
-@app.route('/chatbotsimple')
-def chatbot_simple():
-    threading.Thread(target=run_streamlit, args=('Talk2AI/app.py', 8501)).start()
-    return redirect("http://localhost:8502", code=302)
+@app.route('/talk2ai')
+def talk2ai():
+    return redirect("https://talk2ai.onrender.com", code=302)
 
-@app.route('/chatwithcsv')
-def chat_with_csv():
-    threading.Thread(target=run_streamlit, args=('Talk2CSV/app.py', 8502)).start()
-    return redirect("http://localhost:8503", code=302)
+# Add similar routes for other apps
+@app.route('/talk2csv')
+def talk2csv():
+    return redirect("https://talk2csv.onrender.com", code=302)
 
-@app.route('/chatwithimages')
-def chat_with_images():
-    threading.Thread(target=run_streamlit, args=('Talk2Image/app.py', 8503)).start()
-    return redirect("http://localhost:8504", code=302)
+@app.route('/talk2image')
+def talk2image():
+    return redirect("https://talk2image.onrender.com", code=302)
 
-@app.route('/chatwithpdf')
-def chat_with_pdf():
-    threading.Thread(target=run_streamlit, args=('Talk2PDF/app.py', 8504)).start()
-    return redirect("http://localhost:8505", code=302)
+@app.route('/talk2pdf')
+def talk2pdf():
+    return redirect("https://talk2pdf-sd.streamlit.app/", code=302)
 
-@app.route('/chatwithwebsite')
-def chat_with_website():
-    threading.Thread(target=run_streamlit, args=('Talk2Websites/app.py', 8505)).start()
-    return redirect("http://localhost:8506", code=302)
+@app.route('/talk2websites')
+def talk2websites():
+    return redirect("https://talk2websites.onrender.com", code=302)
 
-@app.route('/chatwithytbe')
-def chat_with_ytbe():
-    threading.Thread(target=run_streamlit, args=('Talk2YTube/app.py', 8506)).start()
-    return redirect("http://localhost:8507", code=302)
+@app.route('/talk2ytube')
+def talk2ytube():
+    return redirect("https://talk2ytube.onrender.com", code=302)  # Update with your actual link
 
-@app.route('/webchat')
-def web_chat():
-    threading.Thread(target=run_streamlit, args=('Talk2NetAssistAI/app.py', 8507)).start()
-    return redirect("http://localhost:8508", code=302)
+@app.route('/talk2netassistai')
+def talk2netassistai():
+    return redirect("https://talk2netassistai.onrender.com", code=302)
 
 if __name__ == '__main__':
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(debug=True)
