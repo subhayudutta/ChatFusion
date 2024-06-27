@@ -29,7 +29,7 @@ def talk2websites():
 
 @app.route('/talk2ytube')
 def talk2ytube():
-    return redirect("https://talk2ytube.onrender.com", code=302)  # Update with your actual link
+    return redirect("https://talk2ytube.onrender.com", code=302)  
 
 @app.route('/talk2netassistai')
 def talk2netassistai():
